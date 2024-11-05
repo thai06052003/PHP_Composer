@@ -1,0 +1,17 @@
+{
+    "name": "xuanthai/php_advanced",
+    "description": "Demo learn composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Dinh Xuan Thai",
+            "email": "xuanthai0304@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "require": {
+        "symfony/mailer": "^7.1"
+    }
+}
