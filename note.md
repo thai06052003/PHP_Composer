@@ -14,7 +14,7 @@
         "phpmailer/phpmailer": "*"  <!-- Lấy phiên bản mới nhất -->
         "phpmailer/phpmailer": "^6.9.1"  <!-- Lấy phiên bản 6.9.1 -->
     }
-- composer require phpmailer/phpmailer  <!-- dùng câu lệnh trong Terminal để cài đặt (auto cài phiên bản mới nhất) -->
+- composer require phpmailer/phpmailer  <!-- dùng câu lệnh trong Terminal để cài đặt (auto cài phiên bản mới nhất nếu không chọn phiên bản) -->
 - composer remove phpmailer/phpmailer  <!-- dùng câu lệnh trong Terminal để xóa thư viện hoặc có thể xóa trong require rồi dùng câu lệnh update -->
 
 # Lưu ý require-dev packages:
@@ -22,6 +22,8 @@
         "phpmailer/phpmailer": "*"  <!-- Lấy phiên bản mới nhất -->
         "phpmailer/phpmailer": "^6.9.1"  <!-- Lấy phiên bản 6.9.1 -->
     }
+- ^1.1.0: lên phiên bản cao nhất của bản 1
+- 1.1.* : lên phiên bản cao nhất của 1.1.
 - composer require phpmailer/phpmailer --dev  <!-- dùng câu lệnh trong Terminal để cài đặt (auto cài phiên bản mới nhất) -->
 - composer remove phpmailer/phpmailer --dev  <!-- dùng câu lệnh trong Terminal để xóa thư viện hoặc có thể xóa trong require rồi dùng câu lệnh update -->
 
@@ -47,3 +49,15 @@ composer dump-autoload
 - ClassName: Bắt buộc phải có và phải có tên file PHP trùng tên ClassName ở thư mục tương ứng với namespace cuối cùng (ClassName.php), trong file đó sẽ định nghĩa nội dung của code của lớp
 
 # ClassMap Autoload
+
+# Cài đặt Package theo phiên bản và cập nhật
+
+# Composer Update và Composer Install
+
+- Composer Update: Chạy các bản cập nhật trong file composer.json
+- Composer Install: Ưu tiên chạy trong file composer.lock, nếu không có chạy trong file composer.json
+- Composer install -no-dev --> Chỉ cài require
+- Composer install  --> Cài cả require và required-dev
+
+Tips: Clone Repository --> Composer install
+Composer Update thường sử dụng ở môi trường dev

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e92a63215803a6011e7b0e61e40c152c",
+    "content-hash": "4fd9367460e780fe4a1c88ed3d3d16a4",
     "packages": [
         {
             "name": "doctrine/lexer",
@@ -152,41 +152,40 @@
         },
         {
             "name": "html2text/html2text",
-            "version": "4.3.2",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtibben/html2text.git",
-                "reference": "3b443cbe302b52eb5806a21a9dbd79524203970a"
+                "reference": "1338bc954d1e73dd98643c9859cb0bb27f324412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mtibben/html2text/zipball/3b443cbe302b52eb5806a21a9dbd79524203970a",
-                "reference": "3b443cbe302b52eb5806a21a9dbd79524203970a",
+                "url": "https://api.github.com/repos/mtibben/html2text/zipball/1338bc954d1e73dd98643c9859cb0bb27f324412",
+                "reference": "1338bc954d1e73dd98643c9859cb0bb27f324412",
                 "shasum": ""
             },
             "require-dev": {
-                "phpunit/phpunit": "~4|^9.0"
-            },
-            "suggest": {
-                "ext-mbstring": "For best performance",
-                "symfony/polyfill-mbstring": "If you can't install ext-mbstring"
+                "phpunit/phpunit": "~4"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Html2Text\\": "src/"
+                    "Html2Text\\": [
+                        "src/",
+                        "test/"
+                    ]
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0-or-later"
+                "GPLv2"
             ],
             "description": "Converts HTML to formatted plain text",
             "support": {
                 "issues": "https://github.com/mtibben/html2text/issues",
-                "source": "https://github.com/mtibben/html2text/tree/4.3.2"
+                "source": "https://github.com/mtibben/html2text/tree/master"
             },
-            "time": "2024-08-20T02:43:29+00:00"
+            "time": "2016-02-22T00:38:07+00:00"
         },
         {
             "name": "pragmarx/random",
